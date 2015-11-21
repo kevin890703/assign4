@@ -1,17 +1,7 @@
-int state, flightStatus = 1;
-int bg2x = -640;
-int hpx = 40;
-int treasureX = floor(random(160,550));
-int treasureY = floor(random(50,390));
-int fighterX = 480;
-int fighterY = floor(random(120,360));
-int bg1x, treasureXeat, treasureYeat, boomX, boomY, boomCounter, counter = 0;
+int state = 1, flightStatus = 1, bg1x = 0, bg2x = -640, hpx = 40, treasureX = floor(random(160,550)), treasureY = floor(random(50,390)), fighterX = 480, fighterY = floor(random(120,360)), treasureXeat = 0, treasureYeat = 0, boomX = 0, boomY = 0, boomCounter = 0, enemyY1 = floor(random(120,360)), enemyY2 = floor(random(20,260)), enemyY3 = floor(random(120,360)), counter = 0;
 int [] enemyX = new int [18];
 int [] enemyY = new int [18];
-int enemyY1 = floor(random(120,360));
-int enemyY2 = floor(random(20,260));
-int enemyY3 = floor(random(120,360));
-PImage bg1, bg2, end1, end2, enemy, fighter, flame1, flame2, flame3, flame4, flame5, hp, start1, start2, treasure, shoot;
+PImage bg1, bg2, end1, end2, enemy, fighter, flame1, flame2,flame3, flame4, flame5, hp, start1, start2, treasure, shoot;
 PImage [] flame = new PImage [5];
 boolean upPressed, downPressed, leftPressed, rightPressed, spacePressed, boom = false;
 
