@@ -25,7 +25,7 @@ void setup (){
   treasure = loadImage("img/treasure.png");
   //  setup enemy arrays
   for(int i = 0; i < 5; i ++){enemyX[i] = 0 - 70*i;}
-  for(int i = 5; i < 10; i++){enemyX[i] = -920 - 70*(i-6);}
+  for(int i = 5; i < 10; i++){enemyX[i] = -920 - 70*(i-5);}
   for(int i = 10; i < 15; i++){enemyX[i] = -1840 - 70*(i-11);}
   for(int i = 15; i < 18; i++){enemyX[i] = -1840 - 70*(i-15);}
   for(int i = 0; i < 5; i ++){enemyY[i] = enemyY1;}
